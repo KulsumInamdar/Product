@@ -1,0 +1,23 @@
+/* src/Pages/History.css */
+
+.history-container {
+    padding: 20px; /* Adjust padding as needed */
+    max-width: 800px; /* Optional: Limit the width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+.history-section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+.history-title {
+    font-size: 1.5rem; /* Title font size */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.project-item {
+    border: 1px solid #ccc; /* Border around each project */
+    padding: 10px; /* Padding inside each project */
+    margin-bottom: 10px; /* Space between project items */
+    border-radius: 5px; /* Optional: Rounded corners */
+}

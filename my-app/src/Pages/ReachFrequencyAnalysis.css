@@ -1,0 +1,63 @@
+/* Ensure the html and body can take the full height and width of the screen */
+html, body {
+    height: 100%; /* Make sure the body and html take up full height */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    overflow: auto; /* Allow scrolling */
+    width: 100%; /* Ensure the body and html take full width */
+}
+
+/* The main container that holds all content */
+.main-container {
+    height: 100%; /* Full height of the screen */
+    overflow: auto; /* Allow scrolling when content overflows */
+    padding: 20px; /* Add padding around content */
+    width: 100vw; /* Make the container 100% of the viewport width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+/* Add this to make sure your content can expand and scroll */
+.analysis-container {
+    min-height: 100%; /* Ensure container expands with content */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align items from top */
+    gap: 20px; /* Add space between elements */
+}
+
+/* Optionally, to make sure the graphs are placed side by side, apply this */
+.graphs-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%; /* Full width of the page */
+    overflow-x: auto; /* Allow horizontal scroll if needed */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Style for the graph containers */
+.absolute-graph,
+.cumulative-graph {
+    flex: 1;
+    width: 48%; /* Increase width of individual graph containers */
+    height: 400px; /* Set height for graphs */
+}
+
+/* Increase the width of the graphs and containers */
+.absolute-graph,
+.cumulative-graph {
+    min-width: 48%; /* Ensures equal width for both graphs */
+    max-width: 48%;  /* Increase width of individual graph containers */
+}
+
+/* Add some padding to the page for spacing */
+.page-content {
+    max-width: 1200px; /* Limit the maximum width to a reasonable size */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+}
+
+/* Make sure the footer and other elements don't get clipped */
+footer {
+    margin-top: 20px;
+}
